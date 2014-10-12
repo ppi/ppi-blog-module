@@ -17,12 +17,7 @@
     "autoload": {
         "psr-4": {
             "BlogModule\\": "src/",
-            "Blog\\Tests\\": "tests"
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
+            "BlogModule\\Tests\\": "tests/"
         }
     }
 }
