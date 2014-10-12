@@ -1,1 +1,0 @@
-<p>Welcome to the PPI Blog! You will find the latest news from the ppi-ecosystem, as well as tutorials demonstrating how awesome PPI is, and how best to use it.</p>
