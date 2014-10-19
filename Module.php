@@ -6,11 +6,10 @@ use PPI\Autoload;
 
 class Module extends BaseModule
 {
-    protected $_moduleName = 'BlogModule';
+    protected $name = 'BlogModule';
 
     public function init($e)
     {
-        Autoload::add(__NAMESPACE__, dirname(__DIR__));
     }
 
     /**
@@ -20,7 +19,7 @@ class Module extends BaseModule
      */
     public function getRoutes()
     {
-        return $this->loadYamlRoutes(__DIR__ . '/../resources/config/routes.yml');
+        return $this->loadYamlRoutes(__DIR__ . '/src/resources/config/routes.yml');
     }
     
     /**
@@ -30,7 +29,7 @@ class Module extends BaseModule
      */
     public function getConfig()
     {
-        return $this->loadYamlConfig(__DIR__ . '/../resources/config/config.yml');
+        return $this->loadYamlConfig(__DIR__ . '/src/resources/config/config.yml');
     }
     
     public function getServiceConfig()
