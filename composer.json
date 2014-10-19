@@ -18,6 +18,9 @@
         "psr-4": {
             "BlogModule\\": "src/",
             "BlogModule\\Tests\\": "tests/"
-        }
+        },
+        "classmap": [
+            "./Module.php"
+        ]
     }
 }
