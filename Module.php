@@ -1,16 +1,11 @@
 <?php
 namespace BlogModule;
 
-use PPI\Module\Module as BaseModule;
-use PPI\Autoload;
+use PPI\Module\AbstractModule;
 
-class Module extends BaseModule
+class Module extends AbstractModule
 {
     protected $name = 'BlogModule';
-
-    public function init($e)
-    {
-    }
 
     /**
      * Get the routes for this module
@@ -19,7 +14,7 @@ class Module extends BaseModule
      */
     public function getRoutes()
     {
-        return $this->loadYamlRoutes(__DIR__ . '/src/resources/config/routes.yml');
+        return $this->loadYamlRoutes(__DIR__ . '/resources/config/routes.yml');
     }
     
     /**
@@ -29,7 +24,7 @@ class Module extends BaseModule
      */
     public function getConfig()
     {
-        return $this->loadYamlConfig(__DIR__ . '/src/resources/config/config.yml');
+        return $this->loadYamlConfig(__DIR__ . '/resources/config/config.yml');
     }
     
     public function getServiceConfig()
