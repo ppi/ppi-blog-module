@@ -2,6 +2,6 @@
 
 namespace BlogModule\Storage;
 
-use PPI\DataSource\ActiveQuery;
+use PPI\Framework\DataSource\ActiveQuery;
 
 class Base extends ActiveQuery {}

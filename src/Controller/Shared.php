@@ -1,7 +1,8 @@
 <?php
+
 namespace BlogModule\Controller;
 
-use PPI\Module\Controller as BaseController;
+use PPI\Framework\Module\Controller as BaseController;
 use User\Entity\User as UserEntity;
 use User\Entity\AuthUser as AuthUserEntity;
 
